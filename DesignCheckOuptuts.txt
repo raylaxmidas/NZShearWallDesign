@@ -1,26 +1,28 @@
 Shear Wall Parameters are shown below:
-    Pier  Height    Depth  Width  End Zone Length       Material  Cover  fc     Ec  fsy  Verti.Dia.  Verti. Spacing  Boundary Reo  Panel Reo  Horiz.Dia.  Horiz. Spacing
-0   EP01    4500   8000.0    300             1200  NZS3101-40MPa     35  40  17000  500          25             200        0.0025     0.0025          16             200
-1   EP02    4500   8000.0    300             1200  NZS3101-40MPa     35  40  17000  500          25             200        0.0025     0.0025          16             200
-2   EP03    4500   8000.0    300             1200  NZS3101-40MPa     35  40  17000  500          25             200        0.0025     0.0025          16             200
-3   EP04    4500   8000.0    300             1200  NZS3101-40MPa     35  40  17000  500          25             250        0.0025     0.0025          16             250
-4   EP05    4500   9596.0    300             1440  NZS3101-40MPa     35  40  17000  500          25             250        0.0025     0.0025          12             200
-5   EP06    4500  10350.0    300             1553  NZS3101-40MPa     35  40  17000  500          25             250        0.0025     0.0025          12             200
-6   EP07    4500   4180.0    300              627  NZS3101-40MPa     35  40  17000  500          32             250        0.0025     0.0025          12             200
-7   EP08    4500   4570.0    300              686  NZS3101-40MPa     35  40  17000  500          25             200        0.0025     0.0025          12             200
-8   EP09    4500   4570.0    300              686  NZS3101-40MPa     35  40  17000  500          25             200        0.0025     0.0025          12             200
-9   EP10    4500   4180.0    300              627  NZS3101-40MPa     35  40  17000  500          32             250        0.0025     0.0025          12             200
-10  EP11    4500  10350.0    300             1553  NZS3101-40MPa     35  40  17000  500          25             300        0.0025     0.0025          12             200
-11  EP12    4500   9596.0    300             1440  NZS3101-40MPa     35  40  17000  500          25             300        0.0025     0.0025          16             300
-12  EP13    4500   8170.0    300             1226  NZS3101-40MPa     35  40  17000  500          25             250        0.0025     0.0025          16             250
-13  EP14    4500   8170.0    300             1226  NZS3101-40MPa     35  40  17000  500          25             200        0.0025     0.0025          16             200
-14  EP15    4500   8170.0    300             1226  NZS3101-40MPa     35  40  17000  500          32             200        0.0025     0.0025          16             200
-15  EP16    4500   8170.0    300             1226  NZS3101-40MPa     35  40  17000  500          32             300        0.0025     0.0025          16             150
-16  EP17    4500   8043.1    300             1207  NZS3101-40MPa     35  40  17000  500          32             250        0.0025     0.0025          16             150
-17  EP18    4500   9549.0    300             1433  NZS3101-40MPa     35  40  17000  500          32             300        0.0025     0.0025          12             150
-18  EP19    4500  10624.0    300             1594  NZS3101-40MPa     35  40  17000  500          25             300        0.0025     0.0025          12             150
-19  EP20    4500   4570.0    300              686  NZS3101-40MPa     35  40  17000  500          32             250        0.0025     0.0025          12             200
-20  EP21    4500   4570.0    300              686  NZS3101-40MPa     35  40  17000  500          32             250        0.0025     0.0025          12             200
+    Pier  Height    Depth  ...  Panel Reo  Horiz.Dia. Horiz. Spacing
+0   EP01    4500   8000.0  ...     0.0025          16            200
+1   EP02    4500   8000.0  ...     0.0025          16            200
+2   EP03    4500   8000.0  ...     0.0025          16            200
+3   EP04    4500   8000.0  ...     0.0025          16            250
+4   EP05    4500   9596.0  ...     0.0025          12            200
+5   EP06    4500  10350.0  ...     0.0025          12            200
+6   EP07    4500   4180.0  ...     0.0025          12            200
+7   EP08    4500   4570.0  ...     0.0025          12            200
+8   EP09    4500   4570.0  ...     0.0025          12            200
+9   EP10    4500   4180.0  ...     0.0025          12            200
+10  EP11    4500  10350.0  ...     0.0025          12            200
+11  EP12    4500   9596.0  ...     0.0025          16            300
+12  EP13    4500   8170.0  ...     0.0025          16            250
+13  EP14    4500   8170.0  ...     0.0025          16            200
+14  EP15    4500   8170.0  ...     0.0025          16            200
+15  EP16    4500   8170.0  ...     0.0025          16            150
+16  EP17    4500   8043.1  ...     0.0025          16            150
+17  EP18    4500   9549.0  ...     0.0025          12            150
+18  EP19    4500  10624.0  ...     0.0025          12            150
+19  EP20    4500   4570.0  ...     0.0025          12            200
+20  EP21    4500   4570.0  ...     0.0025          12            200
+
+[21 rows x 16 columns]
 Maximum Axial Forces are shown below:
      Pier     P    V2        V3         T        M2    M3
 4    EP01  1544  6403  0.000000  0.000000  0.000000  6313
@@ -99,8 +101,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  8000.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  25 mm
-Horizontal lenght of the wall =  16 mm
+Diameter of longitudinal bars =  25 mm
+Diameter of horizontal reinforcement =  16 mm
 Spacing of vertical reinforcement =  200 mm
 Number of layers of reinforcement = 1 Layers
 N* -1544 kN
@@ -154,8 +156,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  8000.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  25 mm
-Horizontal lenght of the wall =  16 mm
+Diameter of longitudinal bars =  25 mm
+Diameter of horizontal reinforcement =  16 mm
 Spacing of vertical reinforcement =  200 mm
 Number of layers of reinforcement = 1 Layers
 N* -1289 kN
@@ -209,8 +211,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  8000.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  25 mm
-Horizontal lenght of the wall =  16 mm
+Diameter of longitudinal bars =  25 mm
+Diameter of horizontal reinforcement =  16 mm
 Spacing of vertical reinforcement =  200 mm
 Number of layers of reinforcement = 1 Layers
 N* -1294 kN
@@ -264,8 +266,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  8000.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  25 mm
-Horizontal lenght of the wall =  16 mm
+Diameter of longitudinal bars =  25 mm
+Diameter of horizontal reinforcement =  16 mm
 Spacing of vertical reinforcement =  250 mm
 Number of layers of reinforcement = 1 Layers
 N* -1118 kN
@@ -319,8 +321,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  9596.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  25 mm
-Horizontal lenght of the wall =  12 mm
+Diameter of longitudinal bars =  25 mm
+Diameter of horizontal reinforcement =  12 mm
 Spacing of vertical reinforcement =  250 mm
 Number of layers of reinforcement = 1 Layers
 N* -861 kN
@@ -374,8 +376,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  10350.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  25 mm
-Horizontal lenght of the wall =  12 mm
+Diameter of longitudinal bars =  25 mm
+Diameter of horizontal reinforcement =  12 mm
 Spacing of vertical reinforcement =  250 mm
 Number of layers of reinforcement = 1 Layers
 N* -485 kN
@@ -429,8 +431,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  4180.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  32 mm
-Horizontal lenght of the wall =  12 mm
+Diameter of longitudinal bars =  32 mm
+Diameter of horizontal reinforcement =  12 mm
 Spacing of vertical reinforcement =  250 mm
 Number of layers of reinforcement = 1 Layers
 N* -1749 kN
@@ -484,8 +486,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  4570.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  25 mm
-Horizontal lenght of the wall =  12 mm
+Diameter of longitudinal bars =  25 mm
+Diameter of horizontal reinforcement =  12 mm
 Spacing of vertical reinforcement =  200 mm
 Number of layers of reinforcement = 1 Layers
 N* -1164 kN
@@ -539,8 +541,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  4570.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  25 mm
-Horizontal lenght of the wall =  12 mm
+Diameter of longitudinal bars =  25 mm
+Diameter of horizontal reinforcement =  12 mm
 Spacing of vertical reinforcement =  200 mm
 Number of layers of reinforcement = 1 Layers
 N* -1155 kN
@@ -594,8 +596,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  4180.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  32 mm
-Horizontal lenght of the wall =  12 mm
+Diameter of longitudinal bars =  32 mm
+Diameter of horizontal reinforcement =  12 mm
 Spacing of vertical reinforcement =  250 mm
 Number of layers of reinforcement = 1 Layers
 N* -1642 kN
@@ -649,8 +651,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  10350.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  25 mm
-Horizontal lenght of the wall =  12 mm
+Diameter of longitudinal bars =  25 mm
+Diameter of horizontal reinforcement =  12 mm
 Spacing of vertical reinforcement =  300 mm
 Number of layers of reinforcement = 1 Layers
 N* -377 kN
@@ -704,8 +706,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  9596.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  25 mm
-Horizontal lenght of the wall =  16 mm
+Diameter of longitudinal bars =  25 mm
+Diameter of horizontal reinforcement =  16 mm
 Spacing of vertical reinforcement =  300 mm
 Number of layers of reinforcement = 1 Layers
 N* -694 kN
@@ -759,8 +761,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  8170.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  25 mm
-Horizontal lenght of the wall =  16 mm
+Diameter of longitudinal bars =  25 mm
+Diameter of horizontal reinforcement =  16 mm
 Spacing of vertical reinforcement =  250 mm
 Number of layers of reinforcement = 1 Layers
 N* -1205 kN
@@ -814,8 +816,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  8170.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  25 mm
-Horizontal lenght of the wall =  16 mm
+Diameter of longitudinal bars =  25 mm
+Diameter of horizontal reinforcement =  16 mm
 Spacing of vertical reinforcement =  200 mm
 Number of layers of reinforcement = 1 Layers
 N* -1390 kN
@@ -869,8 +871,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  8170.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  32 mm
-Horizontal lenght of the wall =  16 mm
+Diameter of longitudinal bars =  32 mm
+Diameter of horizontal reinforcement =  16 mm
 Spacing of vertical reinforcement =  200 mm
 Number of layers of reinforcement = 1 Layers
 N* -1515 kN
@@ -924,8 +926,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  8170.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  32 mm
-Horizontal lenght of the wall =  16 mm
+Diameter of longitudinal bars =  32 mm
+Diameter of horizontal reinforcement =  16 mm
 Spacing of vertical reinforcement =  300 mm
 Number of layers of reinforcement = 1 Layers
 N* -1632 kN
@@ -979,8 +981,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  8043.1 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  32 mm
-Horizontal lenght of the wall =  16 mm
+Diameter of longitudinal bars =  32 mm
+Diameter of horizontal reinforcement =  16 mm
 Spacing of vertical reinforcement =  250 mm
 Number of layers of reinforcement = 1 Layers
 N* -1876 kN
@@ -1034,8 +1036,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  9549.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  32 mm
-Horizontal lenght of the wall =  12 mm
+Diameter of longitudinal bars =  32 mm
+Diameter of horizontal reinforcement =  12 mm
 Spacing of vertical reinforcement =  300 mm
 Number of layers of reinforcement = 1 Layers
 N* -862 kN
@@ -1089,8 +1091,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  10624.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  25 mm
-Horizontal lenght of the wall =  12 mm
+Diameter of longitudinal bars =  25 mm
+Diameter of horizontal reinforcement =  12 mm
 Spacing of vertical reinforcement =  300 mm
 Number of layers of reinforcement = 1 Layers
 N* -863 kN
@@ -1144,8 +1146,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  4570.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  32 mm
-Horizontal lenght of the wall =  12 mm
+Diameter of longitudinal bars =  32 mm
+Diameter of horizontal reinforcement =  12 mm
 Spacing of vertical reinforcement =  250 mm
 Number of layers of reinforcement = 1 Layers
 N* -1883 kN
@@ -1199,8 +1201,8 @@ Wall thickness =  300 mm
 Horizontal lenght of the wall =  4570.0 mm
 fc =  40 MPa
 fy =  500 MPa
-Horizontal lenght of the wall =  32 mm
-Horizontal lenght of the wall =  12 mm
+Diameter of longitudinal bars =  32 mm
+Diameter of horizontal reinforcement =  12 mm
 Spacing of vertical reinforcement =  250 mm
 Number of layers of reinforcement = 1 Layers
 N* -1694 kN
