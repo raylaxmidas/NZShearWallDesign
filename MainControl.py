@@ -15,7 +15,8 @@ warnings.filterwarnings("ignore")
 
 #Define File Path for Ouptuts 
 file_path = 'DesignCheckOuptuts.txt'
-#sys.stdout = open(file_path, "w")
+sys.stdout = open(file_path, "w")
+
 
 #Importing Data
 shear_walls_parameters = pd.read_excel (r'Shear Wall Script Design Spreadsheet.xlsm', 
@@ -45,6 +46,7 @@ P_max = shear_wall_forces.loc[shear_wall_forces.groupby('Pier').idxmax()['P']]
 P_max.set_index('Pier')
 print(P_max)
 
+shear_wall_forces['V2'] = shear_wall_forces['V2'].abs()
 print("Maximum Shear Forces are shown below:")
 V2_max = shear_wall_forces.loc[shear_wall_forces.groupby('Pier').idxmax()['V2']]
 V2_max.set_index('Pier')

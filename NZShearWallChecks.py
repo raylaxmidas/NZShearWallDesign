@@ -99,8 +99,8 @@ def flexural_design(wall_types,t,l_w,fc,fy,fyt,dbl,sv,nL,N_max,M_max,cover,dross
     print('Horizontal lenght of the wall = ', l_w, 'mm')
     print('fc = ', fc, 'MPa')
     print('fy = ', fy, 'MPa')
-    print('Horizontal lenght of the wall = ', dbl, 'mm')
-    print('Horizontal lenght of the wall = ', d_bh, 'mm')
+    print('Diameter of longitudinal bars = ', dbl, 'mm')
+    print('Diameter of horizontal reinforcement = ', d_bh, 'mm')
     print('Spacing of vertical reinforcement = ', sv, 'mm')
     print('Number of layers of reinforcement =', nL, 'Layers')
     print('N*', N_max, 'kN')
@@ -290,7 +290,7 @@ def AntiBuckling (s_h,wall_type,t,fy,fyt,dbl,ds):
     print("Selected stirrup spacing: ", s_h, "mm")
     
     A_b = 1 * ((dbl**2)/(4))*math.pi
-    print("Area of longitudinal bars restrained by one horizontal stirrup:", round(A_b,0), "mm")
+    print("Area of longitudinal bars restrained by one horizontal stirrup:", round(A_b,0), "mm^2")
     
     if wall_type == 3:
         sh_max = min(6*dbl,t/2)

@@ -137,7 +137,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  200 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm^2
 Maximum stirrup spacing:  250 mm
 Area of one stirrup tie:  40.9 mm^2
 Stirrup spacing is OKAY
@@ -192,7 +192,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  200 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm^2
 Maximum stirrup spacing:  250 mm
 Area of one stirrup tie:  40.9 mm^2
 Stirrup spacing is OKAY
@@ -247,7 +247,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  200 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm^2
 Maximum stirrup spacing:  250 mm
 Area of one stirrup tie:  40.9 mm^2
 Stirrup spacing is OKAY
@@ -302,7 +302,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  250 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm^2
 Maximum stirrup spacing:  250 mm
 Area of one stirrup tie:  51.1 mm^2
 Stirrup spacing is OKAY
@@ -357,7 +357,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  200 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm^2
 Maximum stirrup spacing:  250 mm
 Area of one stirrup tie:  40.9 mm^2
 Stirrup spacing is OKAY
@@ -412,7 +412,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  200 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm^2
 Maximum stirrup spacing:  250 mm
 Area of one stirrup tie:  40.9 mm^2
 Stirrup spacing is OKAY
@@ -467,7 +467,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  200 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 804.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 804.0 mm^2
 Maximum stirrup spacing:  300 mm
 Area of one stirrup tie:  52.4 mm^2
 Stirrup spacing is OKAY
@@ -522,7 +522,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  200 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm^2
 Maximum stirrup spacing:  250 mm
 Area of one stirrup tie:  40.9 mm^2
 Stirrup spacing is OKAY
@@ -577,7 +577,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  200 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm^2
 Maximum stirrup spacing:  250 mm
 Area of one stirrup tie:  40.9 mm^2
 Stirrup spacing is OKAY
@@ -632,7 +632,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  200 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 804.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 804.0 mm^2
 Maximum stirrup spacing:  300 mm
 Area of one stirrup tie:  52.4 mm^2
 Stirrup spacing is OKAY
@@ -687,7 +687,7 @@ NOT OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  200 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm^2
 Maximum stirrup spacing:  250 mm
 Area of one stirrup tie:  40.9 mm^2
 Stirrup spacing is OKAY
@@ -742,7 +742,7 @@ NOT OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  300 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm^2
 Maximum stirrup spacing:  250 mm
 Area of one stirrup tie:  61.4 mm^2
 Stirrup spacing is NOT OKAY
@@ -797,7 +797,7 @@ NOT OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  250 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm^2
 Maximum stirrup spacing:  250 mm
 Area of one stirrup tie:  51.1 mm^2
 Stirrup spacing is OKAY
@@ -852,7 +852,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  200 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm^2
 Maximum stirrup spacing:  250 mm
 Area of one stirrup tie:  40.9 mm^2
 Stirrup spacing is OKAY
@@ -907,7 +907,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  200 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 804.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 804.0 mm^2
 Maximum stirrup spacing:  300 mm
 Area of one stirrup tie:  52.4 mm^2
 Stirrup spacing is OKAY
@@ -962,7 +962,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  150 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 804.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 804.0 mm^2
 Maximum stirrup spacing:  300 mm
 Area of one stirrup tie:  39.3 mm^2
 Stirrup spacing is OKAY
@@ -1017,7 +1017,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  150 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 804.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 804.0 mm^2
 Maximum stirrup spacing:  300 mm
 Area of one stirrup tie:  39.3 mm^2
 Stirrup spacing is OKAY
@@ -1072,7 +1072,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  150 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 804.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 804.0 mm^2
 Maximum stirrup spacing:  300 mm
 Area of one stirrup tie:  39.3 mm^2
 Stirrup spacing is OKAY
@@ -1127,7 +1127,7 @@ NOT OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  150 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 491.0 mm^2
 Maximum stirrup spacing:  250 mm
 Area of one stirrup tie:  30.7 mm^2
 Stirrup spacing is OKAY
@@ -1182,7 +1182,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  200 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 804.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 804.0 mm^2
 Maximum stirrup spacing:  300 mm
 Area of one stirrup tie:  52.4 mm^2
 Stirrup spacing is OKAY
@@ -1237,7 +1237,7 @@ OKAY
 ------------------------Antibuckling Checks------------------------
 Selected diameter of stirrup tie:  10 mm
 Selected stirrup spacing:  200 mm
-Area of longitudinal bars restrained by one horizontal stirrup: 804.0 mm
+Area of longitudinal bars restrained by one horizontal stirrup: 804.0 mm^2
 Maximum stirrup spacing:  300 mm
 Area of one stirrup tie:  52.4 mm^2
 Stirrup spacing is OKAY

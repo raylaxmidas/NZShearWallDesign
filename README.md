@@ -1,7 +1,7 @@
 # NZShearWallDesign
 A script which takes output tables relating to shear walls from ETABS summarised within an Excel Spreadsheet and runs NZS 3101:2006 checks for in-plane bending, shear, confinement and anti-buckling. Contact Ray Laxmidas (ray.laxmidas@mottmac.com) for any queries or to report any bugs.
 The script takes ETABS Outputs summarised in a spreadsheet originally developed by Mitchell Mulvey (mitchell.mulvey@mottmac.com) for Australian shear wall design. Note the associated Python Macro for Australian design is not required for this script to run. The scipt runs NZS 3101:2006 checks based on the spreadsheet developed within Mott MacDonald NZ by Darrin Liddell.
-These script have been written to assit in the automation of the design and documentation of the shear walls in the CUMA in Christchurch. Primarily in the West, South and Lower Tiers.
+These script have been written to assit in the automation of the design and documentation of the shear walls in the CUMA in Christchurch. Primarily in the West Stand, South Stand and Lower Tiers.
 
 ## MainControl.py
 The file MainControl.py controls 3 key functions.
@@ -18,7 +18,9 @@ The MainControl.py was developed specifically for the CUMA project but may be re
 The file NZShearWallChecks.py contains all shear wall design checks NZS 3101:2006. The checks are primarily written for elastic design.
 
 ## Notes:
-These scripts have been validated through shear walls calculated on Mott MacDonald spreadsheets for the CUMA East Stand carried out by Andrew Wei (andrew.wei@mottmac.com).
+These scripts have been validated through shear wall designs already calculated by a workflow developed by Andrew Wei (andrew.wei@mottmac.com) on Mott MacDonald spreadsheets for the CUMA East Stand (which are used as the example files within this repo).
+
+These scripts have not been checked in any formal process and should be used with caution for other projects. As such any calculations outputs from this script should be reviewed. There are many in-built assumptions specific to the design of CUMA which may not apply for other projects. For further development of the script contact Ray Laxmidas (ray.laxmidas@mottmac.com). 
 
 ## Running of Scripts:
 
@@ -43,3 +45,4 @@ chdir C:\Downloads\NZShearWallDesign
 .venv\Scripts\Activate.bat
 
 python.exe MainControl.py
+
