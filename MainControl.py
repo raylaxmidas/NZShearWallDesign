@@ -17,7 +17,6 @@ warnings.filterwarnings("ignore")
 file_path = 'DesignCheckOuptuts.txt'
 sys.stdout = open(file_path, "w")
 
-
 #Importing Data
 shear_walls_parameters = pd.read_excel (r'Shear Wall Script Design Spreadsheet.xlsm', 
                     sheet_name='Master', 
@@ -54,7 +53,7 @@ print(V2_max)
 
 print("Maximum Moments are shown below:")
 #Drop all load cases with compression (which is beneifical to the design) and then find the maximum moment.
-shear_wall_forces.drop(shear_wall_forces[shear_wall_forces['P'] <= 0].index, inplace = True)
+#shear_wall_forces.drop(shear_wall_forces[shear_wall_forces['P'] < 0].index, inplace = True)
 M3_max = shear_wall_forces.loc[shear_wall_forces.groupby('Pier').idxmax()['M3']]
 M3_max.set_index('Pier')
 print(M3_max)
@@ -83,12 +82,13 @@ shear_walls_parameters['v_n'] = ''
 shear_walls_parameters['Shear Stress Check'] = ''
 shear_walls_parameters['V_c'] = ''
 shear_walls_parameters['Shear Bar Spacing'] = ''
+shear_walls_parameters['Max spacing of horizontal reinforcement'] = ''
 shear_walls_parameters['Horizontal Spacing Check for Shear'] = ''
 shear_walls_parameters['A_v'] = ''
 shear_walls_parameters['A_vmin'] = ''
 
 #Shear Friction of Dowels Ouputs:
-shear_walls_parameters['Shear friction capacity of dowels'] = ''
+shear_walls_parameters['Shear friction uti of dowels'] = ''
 
 #Antibuckling Outputs:
 shear_walls_parameters['Area of longitudinal bars restrained by one horizontal stirrup'] = ''
@@ -145,18 +145,19 @@ while i < len(shear_walls_parameters):
     phiV=0.75
     shear_design = NZSWC.shear_design(phiV,V_max,N_max,M_max,d_bh,t,l_w,fc,fyt)
     shear_walls_parameters['Shear Bar Spacing'][i] = shear_design[0]
-    shear_walls_parameters['Horizontal Spacing Check for Shear'][i] = shear_design[2]
-    shear_walls_parameters['v_n'][i] = shear_design[3]
-    shear_walls_parameters['Shear Stress Check'][i] = shear_design[1]
-    shear_walls_parameters['V_c'][i] = shear_design[4]
-    shear_walls_parameters['A_v'][i] = shear_design[5]
-    shear_walls_parameters['A_vmin'][i] = shear_design[6]
+    shear_walls_parameters['Max spacing of horizontal reinforcement'][i] = shear_design[1]
+    shear_walls_parameters['Horizontal Spacing Check for Shear'][i] = shear_design[3]
+    shear_walls_parameters['v_n'][i] = shear_design[4]
+    shear_walls_parameters['Shear Stress Check'][i] = shear_design[2]
+    shear_walls_parameters['V_c'][i] = shear_design[5]
+    shear_walls_parameters['A_v'][i] = shear_design[6]
+    shear_walls_parameters['A_vmin'][i] = shear_design[7]
     
     #Run checks for Shear Friction of Dowels:
     phi=0.7
     u_sf=1.0
     shear_friction = NZSWC.Shear_friction_of_dowels(phi,u_sf,dbl,l_w,sv,cover,d_bh,fy,N_max,V_max)
-    shear_walls_parameters['Shear friction capacity of dowels'][i] = shear_friction
+    shear_walls_parameters['Shear friction uti of dowels'][i] = shear_walls_parameters['V2'][i]/shear_friction
     
     #Run checks for AntiBuckling
     ds = 10

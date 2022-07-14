@@ -261,9 +261,9 @@ def shear_design(phi,V_max,N_max,M_max,dbh,t,l_w,fc,f_yt):
         print("Shear Bar Spacing OKAY")
     else:
         spacing_check = 0
-        print("Shear Bar Spacing NOT OKAY")
+        print("Max spacing governs")
     
-    return s_2, shear_stress_check, spacing_check, vn, V_c, A_v, A_vmin
+    return s_2, s_2max, shear_stress_check, spacing_check, vn, V_c, A_v, A_vmin
 
 #The following function checks the shear friction for dowels.
 def Shear_friction_of_dowels (phi,u_sf,dbl,l_w,sv,cover,d_bh,fy,N_max,V_max):  
