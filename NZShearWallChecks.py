@@ -271,7 +271,7 @@ def Shear_friction_of_dowels (phi,u_sf,dbl,l_w,sv,cover,d_bh,fy,N_max,V_max):
     
     c_end = cover + d_bh + 0.5*dbl + 0.5*sv
     A_s =(dbl**2)/4*math.pi*(((l_w-2*c_end)/sv)+1)
-    phiV_sf = phi*u_sf*(A_s*fy+N_max)/1000
+    phiV_sf = phi*u_sf*(A_s*fy+N_max*1000)/1000
     
     print("PhiV_sf = ", round(phiV_sf,0), "kN")
     
@@ -344,64 +344,3 @@ def confinement(wall_type,cover,direction,sv,ds,t,fc,c,l_w,s_vmax,fyt,no_legs,sh
     
     print("Stirrup spacing must be <= ", stirrup_spacing, 'mm for confinement zones')  
     return A_sh, ds, no_legs, stirrup_spacing
-'''
-#Testing outputs for EPO1 hand checked on East Stand (All Ouptuts Correct)
-flexural_design = flexural_design(
-    wall_types=1,
-    t=300,
-    l_w=8000,
-    fc=40,
-    fy=500,
-    fyt=500,
-    dbl=25,
-    sv=200,         
-    nL=1,
-    N_max=-1544,
-    M_max=21575,
-    cover=35,
-    dross=1,
-    d_bh=16)
-
-shear_design(phi=0.75,
-             V_max=6403,
-             N_max=-1544,
-             M_max=21575,
-             dbh=16,
-             t=300,
-             l_w=8000,
-             fc=40,
-             f_yt=500)
-
-Shear_friction_of_dowels (phi=0.7,
-                          u_sf=1.0,
-                          dbl=25,
-                          l_w=8000,
-                          sv=200,
-                          cover=35,
-                          d_bh=16,
-                          fy=500,
-                          N_max=-1544,
-                          V_max=6403)
-
-AntiBuckling (s_h = 250,
-              wall_type = 1,
-              t = 300,
-              fy = 500,
-              fyt = 500,
-              dbl = 25,
-              ds = 10)
-
-confinement(wall_type = 1,
-            cover= 35,
-            direction = 1,
-            sv = 200,
-            ds = 10,
-            t = 300,
-            fc = 40,
-            c = 845.68,
-            l_w =8000,
-            s_vmax = 450,
-            fyt = 500,
-            no_legs = 2,
-            sh = 250)
-'''

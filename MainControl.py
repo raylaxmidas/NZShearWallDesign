@@ -25,7 +25,7 @@ shear_walls_parameters = pd.read_excel (r'Shear Wall Script Design Spreadsheet.x
 shear_walls_parameters.set_index('Pier')
 
 print("Shear Wall Parameters are shown below:")
-print(shear_walls_parameters)
+print(shear_walls_parameters.to_markdown())
 
 shear_walls_parameters['P'] = ''
 shear_walls_parameters['M3'] = ''
@@ -43,20 +43,20 @@ shear_wall_forces.set_index('Pier')
 print("Maximum Axial Forces are shown below:")
 P_max = shear_wall_forces.loc[shear_wall_forces.groupby('Pier').idxmax()['P']]
 P_max.set_index('Pier')
-print(P_max)
+print(P_max.to_markdown())
 
 shear_wall_forces['V2'] = shear_wall_forces['V2'].abs()
 print("Maximum Shear Forces are shown below:")
 V2_max = shear_wall_forces.loc[shear_wall_forces.groupby('Pier').idxmax()['V2']]
 V2_max.set_index('Pier')
-print(V2_max)
+print(V2_max.to_markdown())
 
 print("Maximum Moments are shown below:")
 #Drop all load cases with compression (which is beneifical to the design) and then find the maximum moment.
-#shear_wall_forces.drop(shear_wall_forces[shear_wall_forces['P'] < 0].index, inplace = True)
+shear_wall_forces.drop(shear_wall_forces[shear_wall_forces['P'] < 0].index, inplace = True)
 M3_max = shear_wall_forces.loc[shear_wall_forces.groupby('Pier').idxmax()['M3']]
 M3_max.set_index('Pier')
-print(M3_max)
+print(M3_max.to_markdown())
 
 i = 0
 while i < len(shear_walls_parameters):
@@ -145,8 +145,15 @@ while i < len(shear_walls_parameters):
     phiV=0.75
     shear_design = NZSWC.shear_design(phiV,V_max,N_max,M_max,d_bh,t,l_w,fc,fyt)
     shear_walls_parameters['Shear Bar Spacing'][i] = shear_design[0]
-    shear_walls_parameters['Max spacing of horizontal reinforcement'][i] = shear_design[1]
-    shear_walls_parameters['Horizontal Spacing Check for Shear'][i] = shear_design[3]
+    shear_walls_parameters['Max spacing of horizontal reinforcement'][i] = shear_design[1]  
+    
+    if ((shear_design[3] == 0) and (s_h > shear_design[1])):
+        shear_walls_parameters['Horizontal Spacing Check for Shear'][i] = 0
+    elif((shear_design[3] == 1) and (s_h > shear_design[0])):
+        shear_walls_parameters['Horizontal Spacing Check for Shear'][i] = 0
+    else:
+        shear_walls_parameters['Horizontal Spacing Check for Shear'][i] = 1
+        
     shear_walls_parameters['v_n'][i] = shear_design[4]
     shear_walls_parameters['Shear Stress Check'][i] = shear_design[2]
     shear_walls_parameters['V_c'][i] = shear_design[5]
@@ -175,7 +182,7 @@ while i < len(shear_walls_parameters):
     c = flexural_design[4]
     s_vmax = flexural_design[5]
     no_legs=2
-    confinement = NZSWC.confinement(wall_types,cover,direction,sv,ds,t,fc,c,l_w,s_vmax,fyt,no_legs,s_h)
+    confinement = NZSWC.confinement(wall_types,cover,direction,sv,ds,t,fc,c,l_w,s_vmax,fyt,no_legs,200)
     shear_walls_parameters['Ash = '][i] = confinement[0]
     shear_walls_parameters['Stirrup diameter for confinement'][i] = confinement[1]
     shear_walls_parameters['No of stirrup legs for confinement'][i] = confinement[2]
